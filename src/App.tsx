@@ -73,7 +73,7 @@ export default function App() {
             <motion.img
               src="https://thumbs2.imgbox.com/12/9f/ZQPcWqJB_t.jpeg"
               alt="Md Rokibul Hasan"
-              className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-teal-300"
+              className="w-48 h-48 rounded-full mx-auto mb-4 border-4 border-teal-300"
               whileHover={{ scale: 1.1, rotate: 360 }}
               transition={{ duration: 0.5 }}
             />
@@ -260,7 +260,7 @@ export default function App() {
       </main>
 
       <footer className="bg-gray-900 py-6 text-center">
-        <p>&copy; 2023 Md Rokibul Hasan. All rights reserved.</p>
+        <p>&copy; 2024 Md Rokibul Hasan. All rights reserved.</p>
       </footer>
     </div>
   );
