@@ -1,47 +1,57 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaJava } from 'react-icons/fa';
-import { SiJavascript, SiReact, SiHtml5, SiCss3, SiPython, SiPhp, SiMysql } from 'react-icons/si';
-import Header from './components/Header';
-import MobileEmulator from './components/MobileEmulator';
-import SkillCard from './components/SkillCard';
-import Terminal from './components/Terminal';
-import ProjectCard from './components/ProjectCard';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope, FaJava } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiReact,
+  SiHtml5,
+  SiCss3,
+  SiPython,
+  SiPhp,
+  SiMysql,
+} from "react-icons/si";
+import Header from "./components/Header";
+import MobileEmulator from "./components/MobileEmulator";
+import SkillCard from "./components/SkillCard";
+import Terminal from "./components/Terminal";
+import ProjectCard from "./components/ProjectCard";
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
-
   }, []);
 
   const skills = [
-    { icon: SiJavascript, name: 'JavaScript' },
-    { icon: SiReact, name: 'React Native' },
-    { icon: SiHtml5, name: 'HTML5' },
-    { icon: SiCss3, name: 'CSS3' },
-    { icon: SiPython, name: 'Python' },
-    { icon: FaJava, name: 'Java' },
-    { icon: SiPhp, name: 'PHP' },
-    { icon: SiMysql, name: 'MySQL' },
+    { icon: SiJavascript, name: "JavaScript" },
+    { icon: SiReact, name: "React Native" },
+    { icon: SiHtml5, name: "HTML5" },
+    { icon: SiCss3, name: "CSS3" },
+    { icon: SiPython, name: "Python" },
+    { icon: FaJava, name: "Java" },
+    { icon: SiPhp, name: "PHP" },
+    { icon: SiMysql, name: "MySQL" },
   ];
 
   const projects = [
     {
-      title: 'Minnah',
-      description: 'Mobile app for Muslims with features like Quranic exploration, mosque locator, and more.',
-      tech: 'Node.js, React Native',
+      title: "Minnah",
+      description:
+        "Mobile app for Muslims with features like Quranic exploration, mosque locator, and more.",
+      tech: "Node.js, React Native",
     },
     {
-      title: 'uniHub',
-      description: 'Online platform for teachers and students to connect and learn together.',
-      tech: 'PHP, MySQL, HTML, CSS, JavaScript',
+      title: "uniHub",
+      description:
+        "Online platform for teachers and students to connect and learn together.",
+      tech: "PHP, MySQL, HTML, CSS, JavaScript",
     },
     {
-      title: 'AgroGrove',
-      description: 'Platform for farmers to sell products, hire workers, and get assistance.',
-      tech: 'PHP, MySQL, HTML, CSS, JavaScript',
+      title: "AgroGrove",
+      description:
+        "Platform for farmers to sell products, hire workers, and get assistance.",
+      tech: "PHP, MySQL, HTML, CSS, JavaScript",
     },
   ];
 
@@ -50,7 +60,10 @@ export default function App() {
       <Header />
 
       <main className="pt-16">
-        <section id="hero" className="min-h-screen flex items-center justify-center">
+        <section
+          id="hero"
+          className="min-h-screen flex items-center justify-center"
+        >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
@@ -58,22 +71,43 @@ export default function App() {
             className="text-center"
           >
             <motion.img
-              src="/profile.png?height=128&width=128"
+              src="https://thumbs2.imgbox.com/12/9f/ZQPcWqJB_t.jpeg"
               alt="Md Rokibul Hasan"
               className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-teal-300"
               whileHover={{ scale: 1.1, rotate: 360 }}
               transition={{ duration: 0.5 }}
             />
-            <h1 className="text-4xl md:text-6xl font-bold text-teal-300 mb-2">Md Rokibul Hasan</h1>
-            <p className="text-xl md:text-2xl text-teal-100 mb-6">Junior Software Developer</p>
+
+            <h1 className="text-4xl md:text-6xl font-bold text-teal-300 mb-2">
+              Md Rokibul Hasan
+            </h1>
+            <p className="text-xl md:text-2xl text-teal-100 mb-6">
+              Junior Software Developer
+            </p>
             <div className="flex justify-center space-x-4">
-              <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} href="https://github.com/rokib16x" target="_blank" rel="noopener noreferrer">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://github.com/rokib16x"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub className="text-3xl hover:text-teal-300 transition-colors duration-300" />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} href="https://www.linkedin.com/in/rokibulhasanshad" target="_blank" rel="noopener noreferrer">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://www.linkedin.com/in/rokibulhasanshad"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin className="text-3xl hover:text-teal-300 transition-colors duration-300" />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} href="mailto:rokibulhasanshad@gmail.com">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="mailto:rokibulhasanshad@gmail.com"
+              >
                 <FaEnvelope className="text-3xl hover:text-teal-300 transition-colors duration-300" />
               </motion.a>
             </div>
@@ -96,7 +130,10 @@ export default function App() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg max-w-2xl"
             >
-              I'm a software engineer passionate about mobile app development. My goal is to deliver high-quality work and become one of the best in my field. I'm always learning and improving my skills through various web and mobile projects.
+              I'm a software engineer passionate about mobile app development.
+              My goal is to deliver high-quality work and become one of the best
+              in my field. I'm always learning and improving my skills through
+              various web and mobile projects.
             </motion.p>
           </div>
         </section>
@@ -143,7 +180,11 @@ export default function App() {
             </motion.h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {skills.map((skill, index) => (
-                <SkillCard key={skill.name} icon={skill.icon} name={skill.name} />
+                <SkillCard
+                  key={skill.name}
+                  icon={skill.icon}
+                  name={skill.name}
+                />
               ))}
             </div>
           </div>
@@ -183,13 +224,28 @@ export default function App() {
               className="max-w-lg mx-auto"
             >
               <div className="mb-4">
-                <input type="text" placeholder="Name" className="w-full p-2 bg-gray-700 bg-opacity-50 rounded border border-teal-500 text-teal-100 placeholder-teal-300" required />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="w-full p-2 bg-gray-700 bg-opacity-50 rounded border border-teal-500 text-teal-100 placeholder-teal-300"
+                  required
+                />
               </div>
               <div className="mb-4">
-                <input type="email" placeholder="Email" className="w-full p-2 bg-gray-700 bg-opacity-50 rounded border border-teal-500 text-teal-100 placeholder-teal-300" required />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="w-full p-2 bg-gray-700 bg-opacity-50 rounded border border-teal-500 text-teal-100 placeholder-teal-300"
+                  required
+                />
               </div>
               <div className="mb-4">
-                <textarea placeholder="Message" rows={5} className="w-full p-2 bg-gray-700 bg-opacity-50 rounded border border-teal-500 text-teal-100 placeholder-teal-300" required></textarea>
+                <textarea
+                  placeholder="Message"
+                  rows={5}
+                  className="w-full p-2 bg-gray-700 bg-opacity-50 rounded border border-teal-500 text-teal-100 placeholder-teal-300"
+                  required
+                ></textarea>
               </div>
               <motion.button
                 whileHover={{ scale: 1.05 }}
