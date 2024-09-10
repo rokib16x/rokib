@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/rokib/static/css/main.0ad7b78f.css",
-    "main.js": "/rokib/static/js/main.e4ce207c.js",
+    "main.css": "/rokib/static/css/main.b5ff5a10.css",
+    "main.js": "/rokib/static/js/main.93c77c88.js",
     "index.html": "/rokib/index.html",
-    "main.0ad7b78f.css.map": "/rokib/static/css/main.0ad7b78f.css.map",
-    "main.e4ce207c.js.map": "/rokib/static/js/main.e4ce207c.js.map"
+    "main.b5ff5a10.css.map": "/rokib/static/css/main.b5ff5a10.css.map",
+    "main.93c77c88.js.map": "/rokib/static/js/main.93c77c88.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ad7b78f.css",
-    "static/js/main.e4ce207c.js"
+    "static/css/main.b5ff5a10.css",
+    "static/js/main.93c77c88.js"
   ]
 }
